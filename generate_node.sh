@@ -1,5 +1,5 @@
 #!/bin/sh
-#
+# Generate a Riak node somewhere on your filesystem *not* where you installed Riak's distribution
 # ./generate-node.sh -p 8087 -P 192.168.1.201 -h 8098 -H 192.168.1.201 -d 8099 -D 192.168.1.201 -s riak_kv_eleveldb_backend /mnt/riak/bin/riak /data/solid/riak
 
 while [ "${1:0:1}" = "-" -a "${#1}" -eq 2 ]; do
